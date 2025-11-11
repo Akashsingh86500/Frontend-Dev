@@ -1,0 +1,103 @@
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+/* Team Container (Flexbox Layout) */
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Team Card Styling */
+.team-card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 30%;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #00adb5;
+}
+
+.team-card h2 {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.team-card h3 {
+  font-size: 1rem;
+  color: #00adb5;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Highlighted Card (Team Lead) */
+.lead {
+  background-color: #e6f7f8;
+  border: 2px solid #00adb5;
+  box-shadow: 0 6px 15px rgba(0,173,181,0.3);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Design (Single Column on Small Screens) */
+@media (max-width: 600px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    width: 90%;
+  }
+}
