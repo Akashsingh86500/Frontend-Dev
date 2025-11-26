@@ -1,0 +1,115 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY LAYOUT */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: #111;
+    padding: 1.2em 2em;
+    text-align: center;
+    position: sticky; /* Keeps header visible while scrolling */
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* SECTION BASE STYLES */
+.section {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5em 2em;
+}
+
+.section .content {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for readability */
+    padding: 2em;
+    border-radius: 10px;
+}
+
+/* HEADING STYLES (Different sizes & weights) */
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* --- INDIVIDUAL SECTIONS --- */
+
+/* INTRO SECTION: background image + fixed attachment (parallax) */
+.intro {
+    background: url('https://images.unsplash.com/photo-1549887534-3db1bd59dcca?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+/* HISTORY SECTION: linear gradient */
+.history {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+}
+
+/* CULTURE SECTION: radial gradient + fixed background */
+.culture {
+    background: radial-gradient(circle, #2c3e50, #4ca1af);
+    background-attachment: fixed;
+}
+
+/* NATURE SECTION: image with fixed attachment */
+.nature {
+    background: url('https://images.unsplash.com/photo-1533055640609-24b498cdfd49?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+/* CONTACT SECTION: solid color background */
+.contact {
+    background-color: #1a1a1a;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9rem;
+}

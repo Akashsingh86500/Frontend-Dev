@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d8f3dc;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b4332;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1b4332;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.shopping {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.login-btn {
+  border: 1px solid #1b4332;
+  padding: 6px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #1b4332;
+  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #081c15;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #2d6a4f;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  background-color: #1b4332;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.explore-btn:hover {
+  background-color: #0d3828;
+}
+
+.hero-image {
+  background-color: #267144;
+  border-radius: 100px 25px;
+  padding: 30px;
+  
+}
+
+.hero-image img {
+  width: 320px;
+
+  
+}

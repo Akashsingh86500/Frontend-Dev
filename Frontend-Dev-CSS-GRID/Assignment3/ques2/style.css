@@ -1,0 +1,120 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #00adb5;
+}
+
+/* Main Sections */
+main {
+    margin-top: 100px; /* space for fixed header */
+}
+
+/* Generic section style */
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.section .content {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+/* Different heading sizes */
+.section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Section 1: Overview (with linear gradient) */
+.overview {
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+    background-attachment: fixed;
+}
+
+/* Section 2: Culture (with radial gradient) */
+.culture {
+    background: radial-gradient(circle at center, #ff9966, #ff5e62);
+}
+
+/* Section 3: Landmarks (with fixed background image) */
+.landmarks {
+    background-image: url("https://images.unsplash.com/photo-1576485290818-9a1d2bff9b86");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Section 4: Food (with another fixed background image) */
+.food {
+    background-image: url("https://images.unsplash.com/photo-1543353071-087092ec393f");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
